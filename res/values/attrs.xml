@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="LabelView">
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="PieChart">
+        <attr name="drawLine" format="boolean"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="scaleType" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left_top" value="1"/>
+            <enum name="top_right" value="2"/>
+            <enum name="right_bottom" value="3"/>
+            <enum name="bottom_let" value="4"/>
+            <enum name="stretch" value="5"/>
+        </attr>
+    </declare-styleable>
+</resources>

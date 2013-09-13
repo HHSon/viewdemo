@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/study.pac"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical" >
+
+    <study.pac.customview.PieChart
+        android:id="@+id/pieChart4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/pieChart3"
+        android:layout_alignParentRight="true"
+        app:lineColor="@color/orange"
+        app:lineWidth="2dp" />
+
+    <study.pac.customview.PieChart
+        android:id="@+id/pieChart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        app:drawLine="false"
+        app:lineColor="@color/orange"
+        app:lineWidth="0dp"
+        app:scaleType="left_top" />
+
+    <study.pac.customview.PieChart
+        android:id="@+id/pieChart2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pieChart1"
+        android:layout_marginTop="79dp"
+        app:lineColor="@color/red" />
+
+    <study.pac.customview.PieChart
+        android:id="@+id/pieChart3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/pieChart2"
+        android:layout_centerHorizontal="true"
+        app:drawLine="false"
+        app:lineColor="@color/green" />
+
+</RelativeLayout>
